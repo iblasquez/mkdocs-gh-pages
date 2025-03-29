@@ -1,0 +1,35 @@
+# .github/workflows/deploy.yml
+
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # déploie à chaque push sur main
+  workflow_dispatch: # possibilité de lancer le workflow manuellement depuis Actions
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Installer les dépendances
+        run: |
+          pip install mkdocs-material
+
+      - name: Déployer vers GitHub Pages
+        run: |
+          mkdocs gh-deploy --force
