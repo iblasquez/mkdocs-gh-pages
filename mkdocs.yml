@@ -3,3 +3,19 @@ site_url: https://iblasquez.github.io/mkdocs-gh-pages
 
 theme:
   name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Basculer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode clair
+  
