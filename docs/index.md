@@ -1,4 +1,8 @@
-# MkDocs et de MkDocs Material en quelques mots
+# MkDocs et MkDocs Material en quelques mots
+
+!!! info
+    Ce site contient un tutoriel pour débuter avec MkDocs et MkDocs Material.  
+    Rendez-vous dans la section **Guide de démarrage** pour le commencer.
 
 - Site MkDocs : <https://www.mkdocs.org>
 - Site Material for MkDocs : <https://squidfunk.github.io/mkdocs-material/>

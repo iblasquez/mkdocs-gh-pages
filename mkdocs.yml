@@ -19,3 +19,6 @@ theme:
         icon: material/weather-sunny
         name: Basculer en mode clair
   
+markdown_extensions:
+  - admonition
+
