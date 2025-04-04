@@ -18,6 +18,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Basculer en mode clair
+  language : fr
   
 markdown_extensions:
   - admonition
